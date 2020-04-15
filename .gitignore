@@ -1,0 +1,7 @@
+# yarn stuff
+/.cache
+/dist
+/node_modules
+package.json
+yarn.lock
+index.js
