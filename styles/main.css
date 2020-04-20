@@ -1,0 +1,154 @@
+/* All */
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.507);
+  color: white;
+}
+
+/* Index */
+
+.pageContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 1fr 10%;
+  gap: 1px 1px;
+  height: 98vh;
+}
+
+header {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h1 {
+  color: rgb(97, 97, 97);
+  border-bottom: 3px solid rgb(31, 189, 0);
+  padding-bottom: 4px;
+}
+
+header a {
+  font-size: 1.2em;
+}
+
+header a:nth-child(2) {
+  padding: 0px 6px;
+  margin: 0px 4px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.mainContent {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  margin-left: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(/imgs/20191110_130743.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  -webkit-box-shadow: -1px 1px 49px 2px rgba(117, 117, 117, 1);
+  -moz-box-shadow: -1px 1px 49px 2px rgba(117, 117, 117, 1);
+  box-shadow: -1px 1px 49px 2px rgba(117, 117, 117, 1);
+  color: white;
+  text-shadow: 3px 3px 2px black;
+}
+
+.mcText {
+  background-color: rgba(134, 134, 134, 0.637);
+  padding: 35px;
+  font-size: 25px;
+  color: white;
+  text-shadow: 3px 3px 2px black;
+  text-align: center;
+}
+
+.mcText h1 {
+  padding-bottom: 10px;
+  border-bottom: 4px solid rgb(18, 58, 13);
+}
+
+.rightBar {
+  font-size: 1.2em;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blogLink {
+  margin-top: 4px;
+  text-align: center;
+  padding: 0px 12px;
+  transition: 0.2s;
+  border-bottom: 2px solid black;
+}
+
+.blogLink a:hover {
+  font-size: 1.05em;
+  color: rgb(52, 221, 0);
+}
+
+footer {
+  margin-top: 20px;
+  grid-column: 1/4;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+}
+
+/* blog-index */
+
+.middleBar {
+  font-size: 1.3em;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.middleBar h1 {
+  padding-bottom: 7px;
+  margin: auto;
+  width: 80%;
+  border-bottom: 2px solid black;
+}
+
+.blogLinkTame {
+  border-bottom: 2px solid black;
+  transition: 0.8s;
+  padding-top: 8px;
+}
+
+.blogLinkTame:hover {
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  border-radius: 15px;
+}
+
+/* Blog Skele */
+
+.pageContainerMid {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 20% 1fr 10%;
+  gap: 1px 1px;
+  height: 98vh;
+}
