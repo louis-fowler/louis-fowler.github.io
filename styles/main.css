@@ -221,6 +221,24 @@ footer {
   text-align: start;
 }
 
+.blogImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.blogImage img {
+  max-width: 90%;
+  height: auto;
+}
+
+footer a {
+  padding: 5px;
+  height: 20px;
+}
+
+/* Margin blog post  */
+
 .exampleContainer {
   border: 1px dashed rgba(0, 0, 0, 0.363);
   background-color: #ffcaa2;
@@ -289,20 +307,9 @@ footer {
   background-color: #56b3c2;
 }
 
-.blogImage {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.blogImage img {
-  max-width: 90%;
-  height: auto;
-}
-
-footer a {
-  padding: 5px;
-  height: 20px;
+.h3Style {
+  text-decoration: underline;
+  display: inline;
 }
 
 /* responsive */
