@@ -10,49 +10,144 @@
     <link rel="stylesheet" href="../styles/main.css" />
     <title>Blog</title>
   </head>
+
   <body>
-    <div class="pageContainerMid">
+    <div class="pageContainerMid" name="top">
       <header class="header">
         <h1>Louis Fowler - Computer Genius</h1>
         <nav>
           <a href="../index.html">Home</a>
-          <a href="#">About</a>
+          <a href="#" style="text-decoration: line-through;">About</a>
           <a href="blog-index.html">Blog</a>
         </nav>
       </header>
       <div class="blogContent">
         <h1>Margin vs Padding vs Border</h1>
-        <div class="blogImage">
-          <img src="../imgs/20191110_130743.jpg" alt="lmao-" />
+        <div class="exampleContainer boxShadow">
+          <p>Margin</p>
+          <div class="exampleBorder">
+            <p>Border</p>
+            <div class="examplePadding">
+              <p>Padding</p>
+              <div class="exampleContent">
+                <p>Content</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci unde
-          tempora blanditiis, minus ducimus repellat quisquam omnis nobis,
-          nesciunt mollitia, magni perspiciatis autem nulla animi veniam non
-          deserunt obcaecati commodi.
-        </p>
-        <h2>Next bit</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-          necessitatibus quod magni illo accusantium eveniet nulla, saepe
-          nostrum laborum, tempora sunt numquam ullam aliquam quis iste
-          delectus. Soluta, velit sint.
-        </p>
-        <h2>Another</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          doloremque amet placeat excepturi error unde suscipit quam
-          accusantium! Quasi cupiditate expedita molestias natus mollitia
-          quisquam a eum voluptates enim et.
-        </p>
-        <h2>One More</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam neque
-          id, ipsum qui omnis dicta saepe atque, illum architecto molestiae rem
-          totam explicabo in modi quidem rerum! Eaque, animi laborum.
-        </p>
+        <div class="blogContentText">
+          <p>
+            Above is a simple example of how an element is laid out on a page.
+            The content in the middle, surrounded by padding, then border then
+            finally margin.
+          </p>
+          <h3>Content</h3>
+          <p>
+            The content is the element in question. This is your image, text,
+            div etc. Lets use a metaphor of an artwork, its frame and the wall
+            it hangs on. For this metaphor consider the content as the actual
+            artwork.
+          </p>
+          <h3>Border</h3>
+          <p>
+            A border is the edge of the content, imagine the frame on your
+            painting.
+          </p>
+          <p>Borders can be stylized through css with the 'border' property</p>
+          <p>
+            With the border property we can style the width ('border-width:
+            2px'), the colour (border-color: 'red') as well as the overall
+            style, such as solid, dashed, doubled etc (border-style: 'dashed')
+          </p>
+          <h3>Padding</h3>
+          <p>
+            The padding property is used to add space around your contents
+            borders, between the content and the border. Consider this an
+            artworks matboard, the area between the artwork and the frame
+            (border)
+          </p>
+          <p>Padding can be set through css with the 'padding' property</p>
+          <p>
+            This can be done for individual sides with 'padding-top',
+            'padding-right', 'padding-bottom' and 'padding-right'. Or can be set
+            all together with the shorthand property.
+          </p>
+          <p>
+            The shorthand is set in a clock wise rotation starting from the top
+          </p>
+          <p>Example - padding: 10px 5px 15px 20px</p>
+          <p>
+            in this instance the padding has been set as follows - padding-top:
+            10px, padding-right: 5px, padding-bottom: 15px and padding-left:
+            20px
+          </p>
+          <h3>Margin</h3>
+          <p>
+            Finally theres margin, this is where space OUTSIDE of the border is
+            set. This helps sets the elements position inside its container.
+            Consider this where on the wall you hang your painting.
+          </p>
+          <p>Margins are set in css with the 'margin' property</p>
+          <p>
+            Much like padding margins can be set individually with the
+            margin-xxx property or all at one time with shorthand
+          </p>
+          <p>
+            The margin property can also be set to 'auto' (margin: 'auto') this
+            centers the element horizontally within its container
+          </p>
+          <h4>but how does this look in action?</h4>
+        </div>
+        <h2>Example</h2>
+        <div class="blogImage">
+          <div>
+            <img class="boxShadow" src="../imgs/painting.jpg" alt="" />
+            <p>fig. 1 boat.png on a webpage</p>
+          </div>
+          <div>
+            <img class="boxShadow" src="../imgs/paintoverlay.jpg" alt="" />
+            <p>fig. 2 boat.png with margin, padding and border highlights</p>
+          </div>
+        </div>
+        <div class="blogContentText">
+          In fig. 1 we can see an image element of a boat. This element has had
+          its padding, border and margin set with css.
+          <p>This particular image style is programed as so -</p>
+          <div class="cssDisplay">
+            <p>.imageContainer {</p>
+            <p> &nbsp &nbsp padding: 50px;</p>
+            <p> &nbsp &nbsp border: 5px dashed brown;</p>
+            <p> &nbsp &nbsp margin: 80px;</p>
+            <p>}</p>
+          </div>
+          <p
+            >We can see all the sections highlighted in different colours in
+            fig. 2</p
+          >
+          <p
+            >Padding is set to 50px, with only one value set, each side inherits
+            that value. All sides have a padding of 50px - This can be seen in
+            fig .2 in <span style="background-color: #c0cf91;">green</span></p
+          >
+          <p
+            >border is set with shorthand to be 5px wide, have the dashed style
+            and be brown. This can be seen in figs 1 & 2 as the
+            <span style="background-color: rgba(165, 42, 42, 0.363);"
+              >brown dashed line</span
+            ></p
+          >
+          <p
+            >The margin is set once again using only one value, so all sides
+            have the same margin size of 80px. This can been seen in fig. 2 in
+            the
+            <span style="background-color: #ffcaa2;"
+              >orange outer section</span
+            ></p
+          >
+        </div>
       </div>
       <footer class="footer">
+        <a class="lineRight" href="#top">Back to top</a>
         <a href="../index.html">Home</a>
       </footer>
     </div>

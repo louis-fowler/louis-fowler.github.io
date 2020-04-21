@@ -15,6 +15,32 @@ a:hover {
   color: white;
 }
 
+.boxShadow {
+  -webkit-box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.75);
+}
+
+.thinBorder {
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.lineRight {
+  border-right: 1px solid black;
+}
+
+.cssDisplay {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #ffdba277;
+  padding: 5px;
+}
+
+.cssDisplay p {
+  white-space: pre;
+  margin: 7px;
+}
+
 /* Index */
 
 .pageContainer {
@@ -35,7 +61,7 @@ header {
 
 header h1 {
   color: rgb(97, 97, 97);
-  border-bottom: 3px solid rgb(31, 189, 0);
+  border-bottom: 3px solid #ffcaa2;
   padding-bottom: 4px;
 }
 
@@ -61,7 +87,6 @@ header a:nth-child(2) {
   background-image: url(/imgs/20191110_130743.jpg);
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
   -webkit-box-shadow: -1px 1px 49px 2px rgba(117, 117, 117, 1);
   -moz-box-shadow: -1px 1px 49px 2px rgba(117, 117, 117, 1);
   box-shadow: -1px 1px 49px 2px rgba(117, 117, 117, 1);
@@ -80,7 +105,7 @@ header a:nth-child(2) {
 
 .mcText h1 {
   padding-bottom: 10px;
-  border-bottom: 4px solid rgb(18, 58, 13);
+  border-bottom: 4px solid #ffcaa2;
 }
 
 .rightBar {
@@ -102,7 +127,7 @@ header a:nth-child(2) {
 
 .blogLink a:hover {
   font-size: 1.05em;
-  color: rgb(52, 221, 0);
+  color: #ffa25b;
 }
 
 footer {
@@ -154,6 +179,7 @@ footer {
 }
 
 .blogContent {
+  font-size: 18px;
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
@@ -163,26 +189,91 @@ footer {
   justify-content: center;
 }
 
-.blogContent p {
+.blogContentText {
+  margin-top: 20px;
   text-align: start;
 }
 
-.blogImage {
-  background-color: black;
+.exampleContainer {
+  border: 1px dashed rgba(0, 0, 0, 0.363);
+  background-color: #ffcaa2;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 50%;
+  width: 60%;
   max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exampleContainer:hover {
+  background-color: #ff9e55;
+}
+
+.exampleContainer p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  align-self: start;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.exampleBorder {
+  border: 1px solid rgba(0, 0, 0, 0.363);
+  background-color: #ffdba2;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exampleBorder:hover {
+  background-color: #fdbf5b;
+}
+
+.examplePadding {
+  border: 1px dashed rgba(0, 0, 0, 0.363);
+  background-color: #c0cf91;
+  width: 85%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.examplePadding:hover {
+  background-color: #b0cc5d;
+}
+
+.exampleContent {
+  border: 1px solid rgba(0, 0, 0, 0.363);
+  background-color: #7db6bf;
+  width: 80%;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+.exampleContent:hover {
+  background-color: #56b3c2;
+}
+
+.blogImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .blogImage img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 
 footer a {
   padding: 5px;
+  height: 20px;
 }
