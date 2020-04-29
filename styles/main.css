@@ -139,7 +139,6 @@ header a:nth-child(2) {
 }
 
 .blogLink a:hover {
-  font-size: 1.05em;
   color: #ffa25b;
 }
 
@@ -179,10 +178,8 @@ footer {
   padding-top: 8px;
 }
 
-.blogLinkTame:hover {
-  background-color: rgba(0, 0, 0, 0.363);
-  color: white;
-  border-radius: 15px;
+.blogLinkTame:hover a {
+  color: #ffa25b;
 }
 
 /* Blog Skele */
