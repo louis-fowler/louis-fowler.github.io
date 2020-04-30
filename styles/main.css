@@ -40,18 +40,6 @@ footer a:hover {
   border-right: 1px solid black;
 }
 
-.cssDisplay {
-  display: inline-flex;
-  flex-direction: column;
-  background-color: #ffdba277;
-  padding: 5px;
-}
-
-.cssDisplay p {
-  white-space: pre;
-  margin: 7px;
-}
-
 /* Index */
 
 .pageContainer {
@@ -220,6 +208,7 @@ footer {
 
 .blogContentText h3,
 .blogContentText h2 {
+  padding-top: 4%;
   color: rgb(185, 91, 19);
 }
 
@@ -232,6 +221,54 @@ footer {
 .blogImage img {
   max-width: 90%;
   height: auto;
+}
+
+.blogImageSing {
+  padding-top: 2%;
+}
+
+.blogImageSing img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blogImageSing p {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.cssDisplay {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #ffdba277;
+  padding: 5px;
+}
+
+.cssDisplay p {
+  white-space: pre;
+  margin: 7px;
+}
+
+.sideNote {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #ffdba277;
+  padding: 15px;
+}
+
+.sideNote p {
+  margin: 7px;
+}
+
+.sideNote a {
+  color: #56b3c2;
+  font-weight: 600;
+  transition: 0.1s;
+}
+
+.sideNote a:hover {
+  color: #6ee7fa;
+  font-weight: 600;
 }
 
 footer a {

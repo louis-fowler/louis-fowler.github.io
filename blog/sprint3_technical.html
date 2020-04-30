@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Louis Fowler - Blog</title>
+  </head>
+  <body>
+    <div class="pageContainerMid" name="top">
+      <header class="header">
+        <a href="../index.html"><h1>Louis Fowler - Web Dev</h1></a>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="#" style="text-decoration: line-through;">About</a>
+          <a href="blog-index.html">Blog</a>
+        </nav>
+      </header>
+      <div class="blogContent">
+        <div class="title">
+          <h1>What is HTML & CSS</h1>
+          <p>29/04/20</p>
+        </div>
+        <div class="blogContentText">
+          <p>
+            At a very basic and simple level, HTML (Hypertext Markup Language),
+            is the bones of a webpage. This is where the content that is to be
+            shown on the webpage is set. This includes setting titles,
+            paragraphs of text, images, links to other pages etc.
+          </p>
+          <p>
+            CSS (Cascading Style Sheets) on the other hand is used to organise
+            and style those bones. With CSS we can arrange HTML segments on the
+            page. We can colour text and backgrounds. We can select fonts and
+            the size fo text. We can do some very basic animation and much much
+            more!
+          </p>
+          <p>
+            With all this talk of bones, lets use a skeleton as an analogy to
+            describe the difference between HTML and CSS
+          </p>
+          <h2>HTML</h2>
+          <p>So lets create out skeleton shall we?</p>
+          <p>(click images to enlarge)</p>
+          <div class="blogImage">
+            <div>
+              <a href="../imgs/sprintTech3/skelehtml2.png" target="_blank">
+                <img
+                  class="boxShadow"
+                  src="../imgs/sprintTech3/skelehtml2.png"
+                  alt=""
+                />
+              </a>
+              <p>fig. 1 Skeleton set up in HTML code</p>
+            </div>
+            <div>
+              <a href="../imgs/sprintTech3/bonesWebPage.png" target="_blank">
+                <img
+                  class="boxShadow"
+                  src="../imgs/sprintTech3/bonesWebPage.png"
+                  alt=""
+                />
+              </a>
+              <p>fig. 2 The skeleton HTML code seen on a webpage</p>
+            </div>
+          </div>
+          <p>Pretty basic huh?</p>
+          <p>
+            In fig 1. you can see the HTML code that turns into the content in
+            fig 2. A quick view of fig .1 shows the layout of our skeleton.
+          </p>
+          <p>
+            Inside the body tag we have a 'skeleton' container section. Inside
+            the skeleton container we see a few sections, each representing a
+            section of our skeleton.The top 'header' segment contains our skull,
+            after that the 'topHalf' segment contains our arms and torso, then
+            finally in the 'footer' segment we have our legs. At the moment
+            however all the bones are in a pile, there is no visual structure.
+          </p>
+          <h2>CSS</h2>
+          <p>(click images to enlarge)</p>
+          <div class="blogImage">
+            <div>
+              <a href="../imgs/sprintTech3/cssCode.png" target="_blank">
+                <img
+                  class="boxShadow"
+                  src="../imgs/sprintTech3/cssCode.png"
+                  alt=""
+                />
+              </a>
+              <p>fig. 1 Skeleton's CSS grid set-up</p>
+            </div>
+            <div>
+              <a href="../imgs/sprintTech3/cssWebPage.png" target="_blank">
+                <img
+                  class="boxShadow"
+                  src="../imgs/sprintTech3/cssWebPage.png"
+                  alt=""
+                />
+              </a>
+              <p>fig. 2 The skeleton now with CSS Grid applied</p>
+            </div>
+          </div>
+          <p>
+            The CSS used here is able to grid out the webpage as the user
+            chooses. In the example above we are able to set up a grid which
+            organises our bones into their correct places on the webpage.
+          </p>
+          <div class="sideNote">
+            <p>sidenote: Some great resources for CSS grid - </p>
+            <p
+              ><a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                >css-tricks</a
+              >
+              a great beginners guide to CSS grid</p
+            >
+            <p
+              ><a href="https://grid.layoutit.com/">layoutit</a> fantastic and
+              easy tool to create a grid system</p
+            >
+          </div>
+          <h3>Style</h3>
+          <p>
+            Now lets add some style, lets put some meat on these bones, then a
+            cool hat on that meat.
+          </p>
+          <div class="blogImageSing">
+            <div>
+              <a href="../imgs/sprintTech3/skeleFinal.png" target="_blank">
+                <img
+                  class="boxShadow"
+                  src="../imgs/sprintTech3/skeleFinal.png"
+                  alt=""
+                />
+              </a>
+              <p>Shabam! Absolutely stunning webpage!</p>
+            </div>
+          </div>
+          <p
+            >Now, is this the most beautiful Webpage ever made? very much no. It
+            is however a great example of what you can do with CSS</p
+          >
+          <p
+            >Amongst other things were able to set a font and the colour that
+            font is, set background-colours to our grid sections, add stylized
+            borders and do more aligning of segments (mainly vertically) with
+            CSS flexbox (note: I added a few extra paragraphs with random text
+            into the torso section to help show spacing)</p
+          >
+          <p
+            >If you would like to look at all thats been added here is a link to
+            a codepen -</p
+          >
+          <p
+            class="codepen"
+            data-height="478"
+            data-theme-id="dark"
+            data-default-tab="html"
+            data-user="stupidcocain"
+            data-slug-hash="OJyjZNx"
+            style="
+              height: 478px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+            data-pen-title="skele.html"
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/stupidcocain/pen/OJyjZNx">
+                skele.html</a
+              >
+              by Louis (<a href="https://codepen.io/stupidcocain"
+                >@stupidcocain</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://static.codepen.io/assets/embed/ei.js"
+          ></script>
+          <p
+            >Now we have our skeleton all dressed up and ready to party, we are
+            ready to make our skele dance - that is a job for JavaScript!</p
+          >
+        </div>
+      </div>
+      <footer class="footer">
+        <a class="lineRight" href="#top">Back to top</a>
+        <a href="../index.html">Home</a>
+      </footer>
+    </div>
+
+    <script src="../index.js"></script>
+  </body>
+</html>
