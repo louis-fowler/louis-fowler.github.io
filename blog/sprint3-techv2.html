@@ -1,135 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Louis Fowler - Blog</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/main.css" />
-  <title>Louis Fowler - Blog</title>
-</head>
-
-<body>
-  <div class="pageContainerMid" name="top">
-    <header class="header">
-      <a href="../index.html">
-        <h1>Louis Fowler - Web Dev</h1>
-      </a>
-      <nav>
+  <body>
+    <div class="pageContainerMid" name="top">
+      <header class="header">
+        <a href="../index.html">
+          <h1>Louis Fowler - Web Dev</h1>
+        </a>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="#" style="text-decoration: line-through;">About</a>
+          <a href="blog-index.html">Blog</a>
+        </nav>
+      </header>
+      <div class="blogContent">
+        <div class="title">
+          <h1>Sprint 3 Questions</h1>
+        </div>
+        <div class="blogContentText">
+          <h2>Control flow & loops</h2>
+          <p>
+            In JavaScript the control flow is the order in which the computer
+            executes code. For example in the code below, the code will be run
+            in order from top to bottom. First setting the variable 'newNum'
+            with the property of 10, then adding 5 to it, making newNum = 15,
+            then subtracting 10 making newNum = 5.
+          </p>
+          <div class="cssDisplay">
+            <p>let newNum = 10;</p>
+            <p>newNum += 5;</p>
+            <p>newNum -= 10;</p>
+          </div>
+          <p>
+            A loop will just run over certain code until a criteria is met.
+            Below is a simple for loop which runs the code 'newNum += 1', until
+            newNum is 5;
+          </p>
+          <div class="cssDisplay">
+            <p>for (let newNum = 0, newNum < 6, newNum ++)</p>
+          </div>
+          <p>
+            For an everyday analogy, control flow is the order/routine of your
+            day. Wake up, brush your teeth, eat breakfast, hop in your car...
+          </p>
+          <p>
+            Whilst a loop is repeating something until a desired outcome is
+            achieved, brushing each tooth 5 times fro optimal cleaning
+          </p>
+          <h2>The DOM</h2>
+          <p>
+            The Document Object Model or DOM for short is an interface that
+            interacts with HTML (and XML) to produce a node tree structure. It
+            is an object-based representation of the source HTML.
+          </p>
+          <p>
+            Through the use of Devtools users are able to manipulate the DOM in
+            there own browsers, changing CSS and HTML values such as text and
+            style
+          </p>
+          <h2>Getting data from Arrays and objects</h2>
+          <p>
+            Although arrays and objects can look very similar, accessing the
+            data inside of them is very different. Bellow is an example of a
+            simple array and a simple object
+          </p>
+          <div class="cssDisplay">
+            <p>let newArray = [1, 2, 3, 4, 5]</p>
+          </div>
+          <br /><br />
+          <div class="cssDisplay">
+            <p>let newObject = {</p>
+            <p>&nbsp &nbsp name: 'Henry',</p>
+            <p>&nbsp &nbsp age: 27,</p>
+            <p>&nbsp &nbsp gender: 'Male',</p>
+            <p>}</p>
+          </div>
+          <p>
+            To access a certain number in the array we can pick it out with
+            square bracket notation and its index in the array (index starts at
+            0 not 1!)
+          </p>
+          <p>So to access number 3 from newArray we use newArray[4]</p>
+          <p>
+            This can't be used for objects however, newObject[2] will return
+            undefined! So how do we get the information out?
+          </p>
+          <p>
+            We can use either square bracket notation or dot notation. Say we
+            went the name from newObject, to get it we can use newObject['name']
+            or newObject.name.
+          </p>
+          <h2>Functions, what are they?</h2>
+          <p>
+            Functions are a nice way to group a collection of code together and
+            give it a name so we are able to run that collection whenever we
+            want!
+          </p>
+          <p>
+            We are also able to pass a function new data every time (as long as
+            it is applicable) to get different results! Below is an example that
+            takes a number (x), multiplies it by 5 then subtracts 2 then console
+            logs the new number.
+          </p>
+          <div class="cssDisplay">
+            <p>const mathFunction = (x) => {</p>
+            <p>&nbsp; &nbsp; x = x * 5 - 2,</p>
+            <p>&nbsp; &nbsp; console.log(x)</p>
+            <p>}</p>
+          </div>
+          <p>
+            We are able to pass the function a number via calling the function
+            and giving it an argument -
+          </p>
+          <div class="cssDisplay">
+            <p>mathFunction(5)</p>
+          </div>
+          <p>Which will console log the number 23!</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <a class="lineRight" href="#top">Back to top</a>
         <a href="../index.html">Home</a>
-        <a href="#" style="text-decoration: line-through;">About</a>
-        <a href="blog-index.html">Blog</a>
-      </nav>
-    </header>
-    <div class="blogContent">
-      <div class="title">
-        <h1>Sprint 3 Questions</h1>
-      </div>
-      <div class="blogContentText">
-        <h2>Control flow & loops</h2>
-        <p>
-          In JavaScript the control flow is the order in which the computer
-          executes code. For example in the code below, the code will be run
-          in order from top to bottom. First setting the variable 'newNum'
-          with the property of 10, then adding 5 to it, making newNum = 15,
-          then subtracting 10 making newNum = 5.
-        </p>
-        <div class="cssDisplay">
-          <p>let newNum = 10;</p>
-          <p>newNum += 5;</p>
-          <p>newNum -= 10;</p>
-        </div>
-        <p>
-          A loop will just run over certain code until a criteria is met.
-          Below is a simple for loop which runs the code 'newNum += 1', until
-          newNum is 5;
-        </p>
-        <div class="cssDisplay">
-          <p>for (let newNum = 0, newNum < 6, newNum ++)</p>
-        </div>
-        <p>
-          For an everyday analogy, control flow is the order/routine of your
-          day. Wake up, brush your teeth, eat breakfast, hop in your car...
-        </p>
-        <p>
-          Whilst a loop is repeating something until a desired outcome is
-          achieved, brushing each tooth 5 times fro optimal cleaning
-        </p>
-        <h2>The DOM</h2>
-        <p>
-          The Document Object Model or DOM for short is an interface that
-          interacts with HTML (and XML) to produce a node tree structure. It
-          is an object-based representation of the source HTML.
-        </p>
-        <p>
-          Through the use of Devtools users are able to manipulate the DOM in
-          there own browsers, changing CSS and HTML values such as text and
-          style
-        </p>
-        <h2>Getting data from Arrays and objects</h2>
-        <p>
-          Although arrays and objects can look very similar, accessing the
-          data inside of them is very different. Bellow is an example of a
-          simple array and a simple object
-        </p>
-        <div class="cssDisplay">
-          <p>let newArray = [1, 2, 3, 4, 5]</p>
-        </div>
-        <br /><br />
-        <div class="cssDisplay">
-          <p>let newObject = {</p>
-          <p>&nbsp &nbsp name: 'Henry',</p>
-          <p>&nbsp &nbsp age: 27,</p>
-          <p>&nbsp &nbsp gender: 'Male',</p>
-          <p>}</p>
-        </div>
-        <p>
-          To access a certain number in the array we can pick it out with
-          square bracket notation and its index in the array (index starts at
-          0 not 1!)
-        </p>
-        <p>So to access number 3 from newArray we use newArray[4]</p>
-        <p>
-          This can't be used for objects however, newObject[2] will return
-          undefined! So how do we get the information out?
-        </p>
-        <p>
-          We can use either square bracket notation or dot notation. Say we went the name from newObject, to get it we
-          can use newObject['name'] or newObject.name.
-        </p>
-        <h2>Functions, what are they?</h2>
-        <p>
-          Functions are a nice way to group a collection of code together and give it a name so we are able to run that
-          collection whenever we want!
-        </p>
-        <p>
-          We are also able to pass a function new data every time (as long as it is applicable) to get different
-          results!
-          Below is an example that takes a number (x), multiplies it by 5 then subtracts 2 then console logs the new
-          number.
-        </p>
-        <div class="cssDisplay">
-          <p>const mathFunction = (x) => {</p>
-          <p>&nbsp; &nbsp; x = x * 5 - 2,</p>
-          <p>&nbsp; &nbsp; console.log(x)</p>
-          <p>}</p>
-        </div>
-        <p>We are able to pass the function a number via calling the function and giving it an argument - </p>
-        <div class="cssDisplay">
-          <p>mathFunction(5)</p>
-        </div>
-        <p>Which will console log the number 23!</p>
-      </div>
+      </footer>
     </div>
-    <footer class="footer">
-      <a class="lineRight" href="#top">Back to top</a>
-      <a href="../index.html">Home</a>
-    </footer>
-  </div>
 
-  <script src="../index.js"></script>
-</body>
-
+    <script src="../index.js"></script>
+  </body>
 </html>
