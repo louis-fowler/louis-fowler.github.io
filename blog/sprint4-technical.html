@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Louis Fowler - Blog</title>
+  </head>
+  <body>
+    <div class="pageContainerMid" name="top">
+      <header class="header">
+        <a href="../index.html"><h1>Louis Fowler - Web Dev</h1></a>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="#" style="text-decoration: line-through;">About</a>
+          <a href="blog-index.html">Blog</a>
+        </nav>
+      </header>
+      <div class="blogContent">
+        <div class="title">
+          <h1>Problem Solving</h1>
+          <p>6/5/20</p>
+        </div>
+        <div class="blogContentText">
+          <h2>Simple problem blockage</h2>
+          <h3>What was the problem?</h3>
+          <p><span class="back-colour">index.js</span> and <span class="back-colour">index.js&nbsp;</span> are the same thing right? Well no, that tiny little whitespace at the end of the second index.js can turn into a bug that takes a whole day to figure out</p>
+          <h3>Problem solving techniques</h3>
+          <p>At the time I was lucky enough to be working with a friend who has many years experience in the industry. I was able to walk him through the bug and try and get ideas from him. We tried reading through the error messages as to why index.js wasn't being imported. We tried Googling our issue to see if it was known bug. We hopped on github and compared the current code to past versions. We rolled back and it worked fine, so why wasn't the newer version working!?</p>
+          <h3>How did I feel during this process?</h3>
+          <p>Honestly pretty hopeless and frustrated. All the usual bug fixes I had experience with didn't work. Kinda made me feel a little bit less of an idiot that my very experienced friend has super confused too</p>
+          <h3>What did you learn?</h3>
+          <p>Just because you cant find bug right away doesn't mean its something super complicated. It could be as simple as a miss-named file. Also, be much more careful when naming files (VS Code now gives you a little warning letting you know if there are leading or trailing whitespaces).</p>
+        </div>
+        <div class="blogContentText">
+          <h2>Solving a problem in an elegant way</h2>
+          <h3>What was the problem?</h3>
+          <p>I had an item card that I needed to change background colour once the checkbox next to it had been checked, to show that that item had been collected. I wanted the checkbox on the right of the item card</p>
+          <h3>Problem solving techniques</h3>
+          <p>I wasn't super keen to have to use JavaScript for such an simple task. Google Google Google and Google some more! I found the CSS sibling selector, on select of the checkbox I could alter the style of the following item card div. This left the checkbox on the left of the item card however, as it only worked with the item card div immediately following the checkbox - another problem- </p>
+          <p>Back to Google! I looked deeper into CSS flex and was able to find a way to reverse the order of the elements inside the container div, although in my html the checkbox still came before the item card, flex displayed them in the opposite order on the webpage!</p>
+          <h3>How did I feel during this process?</h3>
+          <p>Once again I was getting quite frustrated. Why was this simple task so complicated!? I was getting worried I would have to use JavaScript to get it to work. I was also very excited to learn the new techniques I was finding on Google, and boy did it feel great when every thing fell into place!</p>
+          <h3>What did you learn?</h3>
+          <p>I learnt to pace myself. I learned to look at multiple different options to select from and pick the best one for what I need. I learned a ton about CSS combinators and the beauty that is CSS flex</p>
+        </div>
+        <div class="blogContentText">
+          <h2>Problem Solving Techniques</h2>
+          <p>In the two example above it was very important to try different problem solving techniques. Google was my best friend in both the scenarios. I was able to get different methods to fix my problem. The more problems I ran into the more confident I became using different techniques. Looking for help from my friends, looking through error messages in my terminal to see whats going wrong, typing out console.log() has become muscle memory at this point. The more confident I become using different problem solving techniques, the easier programming becomes</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <a class="lineRight" href="#top">Back to top</a>
+        <a href="../index.html">Home</a>
+      </footer>
+    </div>
+
+    <script src="../index.js"></script>
+  </body>
+</html>

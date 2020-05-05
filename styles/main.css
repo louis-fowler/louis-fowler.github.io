@@ -1,4 +1,8 @@
 /* All */
+:root {
+  --txt-bground-colour: #ffdba277;
+}
+
 
 body {
   font-family: "Raleway", sans-serif;
@@ -38,6 +42,10 @@ footer a:hover {
 
 .lineRight {
   border-right: 1px solid black;
+}
+
+.back-colour {
+  background-color: var(--txt-bground-colour);
 }
 
 /* Index */
@@ -240,7 +248,7 @@ footer {
 .cssDisplay {
   display: inline-flex;
   flex-direction: column;
-  background-color: #ffdba277;
+  background-color: var(--txt-bground-colour);
   padding: 5px;
 }
 
@@ -252,7 +260,7 @@ footer {
 .sideNote {
   display: inline-flex;
   flex-direction: column;
-  background-color: #ffdba277;
+  background-color: var(--txt-bground-colour)
   padding: 15px;
 }
 
