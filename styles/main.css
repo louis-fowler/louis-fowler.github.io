@@ -260,7 +260,7 @@ footer {
 .sideNote {
   display: inline-flex;
   flex-direction: column;
-  background-color: var(--txt-bground-colour)
+  background-color: var(--txt-bground-colour);
   padding: 15px;
 }
 
