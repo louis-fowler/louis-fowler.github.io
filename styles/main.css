@@ -360,8 +360,12 @@ footer a {
 
 /* responsive (wrong way around)*/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .medHead {
+    display: none;
+  }
+
+  .footer {
     display: none;
   }
 }
@@ -430,8 +434,15 @@ footer a {
 }
 
 @media screen and (max-width: 670px) {
-  .header h1 {
-    margin: none;
+  .header {
+    flex-direction: column;
+    padding-bottom: 10vmin;
+  }
+
+  header a {
+    text-align: center;
+    width: 90%;
+    font-size: 1em;
   }
 
   .mainContent h1,
@@ -453,7 +464,8 @@ footer a {
 
   .mainContent {
     grid-column: 1/4;
-    width: 90%;
+    width: 100%;
+    margin-left: 0;
     /* height: 90%; */
     /* margin: auto; */
   }
@@ -463,6 +475,7 @@ footer a {
   }
 
   .blogListMini {
+    margin-top: 10vmin;
     display: initial;
     grid-row: 3/4;
     grid-column: 1/4;
@@ -473,6 +486,8 @@ footer a {
   .blogListMini a {
     display: block;
     background-color: rgba(0, 0, 0, 0.068);
+    padding: 1vmin;
+    margin-bottom: 2vmin;
   }
 
   .footer {
@@ -485,13 +500,6 @@ footer a {
   .exampleContainer {
     width: 90%;
     height: 300px;
-  }
-  header h1 {
-    width: 75%;
-    font-size: 1.5em;
-  }
-  header a:nth/-child(n + 2) {
-    display: none;
   }
 
   .medHead {
