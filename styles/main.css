@@ -3,7 +3,6 @@
   --txt-bground-colour: #ffdba277;
 }
 
-
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -131,7 +130,7 @@ header a:nth-child(2) {
   text-align: center;
   padding: 0px 12px;
   transition: 0.2s;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.287);
 }
 
 .blogLink a:hover {
@@ -169,7 +168,7 @@ footer {
 }
 
 .blogLinkTame {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.233);
   transition: 0.8s;
   padding-top: 8px;
 }
@@ -359,17 +358,82 @@ footer a {
   display: inline;
 }
 
-/* responsive */
+/* responsive (wrong way around)*/
+
+@media screen and (min-width: 1024px) {
+  .medHead {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1024px) {
+  .pageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 1fr;
+    gap: 1px 1px;
+    height: 98vh;
+  }
+
+  .mainContent {
+    grid-column: 1/4;
+    width: 90%;
+    /* left off here */
+  }
+
   .blogContent {
     grid-column: 1/4;
     width: 90%;
     margin: auto;
   }
+
+  /* hide */
+
+  .rightBarHeader {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .medHead {
+    padding-top: 2vmin;
+    text-align: center;
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+
+  .rightBar {
+    flex-direction: row;
+    grid-row: 3/5;
+    grid-column: 1/4;
+    text-align: center;
+  }
+
+  .blogLink {
+    border-bottom: none;
+  }
+
+  .blogLink:nth-child(3) {
+    border-left: 1px solid rgba(0, 0, 0, 0.424);
+    border-right: 1px solid rgba(0, 0, 0, 0.424);
+  }
+
+  /* blog link */
+
+  .middleBar {
+    margin: auto;
+    grid-column: 1/2;
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 670px) {
+  .header h1 {
+    margin: none;
+  }
+
   .mainContent h1,
   .mainContent h2 {
     font-size: 1em;
@@ -377,10 +441,14 @@ footer a {
 
   .pageContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20% 40% 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr 1fr 5%;
     gap: 1px 1px;
     height: 98vh;
+  }
+
+  .pageContainerMid .footer {
+    grid-row: 3/4;
   }
 
   .mainContent {
@@ -396,10 +464,22 @@ footer a {
 
   .blogListMini {
     display: initial;
-    grid-row: 3/5;
+    grid-row: 3/4;
     grid-column: 1/4;
     text-align: center;
     font-size: 1em;
+  }
+
+  .blogListMini a {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.068);
+  }
+
+  .footer {
+    margin-top: 20px;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
   }
 
   .exampleContainer {
@@ -407,10 +487,22 @@ footer a {
     height: 300px;
   }
   header h1 {
-    width: 60%;
+    width: 75%;
     font-size: 1.5em;
   }
-  header a:nth-child(n + 2) {
+  header a:nth/-child(n + 2) {
     display: none;
+  }
+
+  .medHead {
+    display: none;
+  }
+
+  /* blog link */
+
+  .middleBar {
+    margin: auto;
+    grid-column: 1/2;
+    width: 90%;
   }
 }
