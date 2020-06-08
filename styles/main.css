@@ -370,6 +370,8 @@ footer a {
   }
 }
 
+/* Tablet */
+
 @media screen and (max-width: 1200px) {
   .pageContainer {
     display: grid;
@@ -432,6 +434,8 @@ footer a {
     width: 70%;
   }
 }
+
+/* Mobile */
 
 @media screen and (max-width: 768px) {
   .header {
